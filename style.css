@@ -1,0 +1,1052 @@
+/*  
+Theme Name: Silver Urdu
+Theme URI: http://www.mbilalm.com/
+Description: "Silver Urdu" is a beautiful Theme for <a href="http://wordpress.org/">Wordpress</a> by <a href="http://www.mbilalm.com">M Bilal M</a>.
+Version: 1.1
+Author: M Bilal M
+Author URI: http://www.mbilalm.com/
+*/
+
+body {
+	font: 19px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Arial, Tahoma;
+	color: #333333;
+	background: #C9CFCE;
+	margin: 0px;
+	padding: 0px;
+	line-height: 31px;
+	direction: rtl;
+}
+
+#main-container {
+	width: 983px;
+	border-top: 0px solid #FF9933;
+	border-right: 10px solid #A7A9BB;
+	border-left: 10px solid #A7A9BB;
+	border-bottom: 10px solid #A7A9BB;
+	background: #F3F7FA url(images/content-bg-right.gif) repeat-y right center;
+	margin: 0 auto;	
+	}
+
+a {
+	color: #7E7CBA;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #7E7CBA;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000000;
+}
+img {
+	border: none;
+}
+
+p {
+	padding: 0px 0px 5px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+h3 {
+	font: bold 20px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Arial, Tahoma;
+	color: #000000;
+	text-align: center;
+	margin: 10px 0px 5px;
+}
+
+h5 {
+	color: #000000;
+	margin: 0px 0px 0px 0px;
+	width: 592px;
+	font: lighter 20px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Tahoma, Arial;
+	padding: 0px 0px 0px 0px;
+	border: 1px solid #83829D;
+	background: #83829D url(images/topbar.gif) repeat-x top left;
+}
+
+h5 a, h5 a:visited {
+	display: block;
+	color: #000000;
+	text-decoration: none;
+}
+
+h5 a:hover {
+	color: #000000;
+	background: #83829D url(images/title-hover.gif) repeat-x bottom left;
+	text-decoration: none;
+}
+
+h6{
+	color: #000000;
+	margin: 0px 0px 10px;
+	width: 594px;
+	text-align: center;
+	font: lighter 22px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Tahoma, Arial;
+	background: #83829D url(images/topbar.gif) repeat-x top left;
+}
+
+form {
+	margin: 0px;
+	padding: 0px;
+}
+
+#wrapper {
+	background: #F3F7FA;
+}
+
+#page {
+	margin: 0px auto;
+	width: 945px;
+}
+
+#header {
+	position: relative;
+	border-top: 0px solid #F6F7F8;
+	border-bottom: 7px solid #F6F7F8;
+	width: 983px;
+}
+
+#headerimg {
+	background: #83829D url(images/header.jpg) repeat-x top right;
+	color: #FFF;
+	height: 160px;
+	position: relative;
+}
+
+#headerimg .title{	
+	padding-top: 20px;
+	text-align: center;
+	font: lighter 36px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Tahoma, Arial;
+}
+
+#headerimg .title a, #headerimg .title a:visited{
+	color: black;	
+	text-decoration: none;
+}
+
+#headerimg .title a:hover{
+	color: #FFF;
+	text-decoration: none;
+}
+
+#headerimg .description{	
+	padding-top: 0px;
+	text-align: center;
+	color: white;
+	font: 20px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Tahoma, Arial;
+	font-size: 20px;
+}
+
+#topbar-all {
+	margin: 0px;
+	width: 983px;
+	height: 35px;
+	text-align: center;
+	border-bottom: 4px solid #F6F7F8;
+	background: #83829D url(images/topbar.gif) repeat-x top left;
+}
+
+#topbar {
+	margin: 0px 0px 0px 10px;
+	list-style: none;
+	padding-left: 10px;
+	padding-right: 0px;
+	float: right;
+}
+
+#topbar li {
+	float: left;
+	margin: 0px;
+	white-space: nowrap;
+}
+
+#topbar .page_item a, #topbar .page_item a:visited{
+	color: #000000;
+	background: none;
+	display: block;
+	text-decoration: none;
+	padding: 0px 15px 3px 15px;
+	font: 20px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Arial, Tahoma;
+	line-height:1.6em;
+}
+
+#topbar .page_item a:hover {
+	color: #000000;
+	background: #83829D url(images/title-hover.gif) repeat-x top left;
+	border: none;
+}
+
+#topbar .current_page_item a, #topbar .current_page_item a:visited{
+	color: white;
+	text-decoration: none;
+	background: #83829D;
+}
+
+#topbar .current_page_item a:hover {
+	color: #000000;
+	background: #83829D url(images/title-hover.gif) repeat-x top left;
+	border: none;
+}
+
+#search {
+	float: left;
+	background: none;
+	width: 350px;
+	margin: 4px 10px 0px 15px;
+	text-align: center;
+	color: #000000;
+}
+
+#searchform {
+	margin: 0px;
+	font: 14px "Urdu Naskh Asiatype", Jameel Noori Nastaleeq, Alvi Nastaleeq, Tahoma, Arial;
+}
+
+#searchform br {
+	display: none;
+}
+
+#searchform #s {
+	width: 150px;
+	height: 25px;
+	padding: 0px 5px 1px 5px;
+	border: 1px dotted #83829D;
+	background: #E7E6E8;
+	margin-right: 0px;
+	color: white;
+	font-weight: normal;
+}
+
+#searchform #s:focus {
+	background: #F1F0F2;
+	border: 1px dotted #000000;
+	color: black;
+}
+
+#searchform input {
+	background: #F1F0F2;
+	border: 1px dotted #000000;
+	height: 25px;
+	font: bold 14px "Urdu Naskh Asiatype", Jameel Noori Nastaleeq, Alvi Nastaleeq, Tahoma, Arial;
+	color: #000000;
+	vertical-align: middle;
+}
+
+#searchform input:hover {
+	background: #83829D;
+	color: #FFF;
+}
+
+#main-content {
+	width: 795px;
+	float: left;
+	border-left: 0px solid #F6F7F8;
+	background: #F6F7F8 url(images/content-bg-left.gif) repeat-y left center;
+}
+
+#content {
+	float: right;
+	width: 594px;
+	text-align:justify;
+	padding: 0px 0px 7px 0px;
+	border-top: 0px solid #F6F7F8;
+	border-left: 0px solid #F6F7F8;
+	border-right: 6px solid #F6F7F8;
+}
+
+h2 {
+	margin: 0px 0px 0px 0px;	
+	padding-bottom: 5px;
+}
+
+#sidebar {
+	float: right;
+	padding: 0px 0px 20px 0px;
+	border-top: 0px solid #F6F7F8;
+	border-right: 7px solid #F6F7F8;
+	width: 180px;
+	color: #333333;
+	font: 11px "Arial", Tahoma;
+	overflow: hidden;
+	background: #E7E6E8;
+}
+
+#sidebar h2, #sidebar .sidebartitle{
+	font: 19px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Arial, Tahoma;
+	color: #000000;
+	line-height: 25px;
+	text-align: center;
+	margin-bottom: 5px;
+	background: #83829D url(images/topbar.gif) repeat-x top left;
+	border-bottom: 2px solid #83829D;
+	border-top: 1px solid #83829D;
+}
+
+#sidebar a:hover{
+	border: none;
+}
+
+#sidebar a, #sidebar a:visited{
+	font: lighter 19px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Arial, Tahoma;
+	color: #4D4D4D;
+	text-decoration: none;
+	line-height: 30px;
+}
+
+#sidebar li a:hover{
+	color: #000000;
+	text-decoration: none;
+}
+.widget {
+	padding: 10px 10px 10px 10px;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+}
+#sidebar ul li {
+	list-style: none;
+	margin: 0;
+	padding: 0px 0px 4px 0px;
+	border: none;
+}
+
+#sidebar ul li ul {
+	padding: 0px 5px 0px 5px;
+	margin: 0;
+}
+#sidebar ul li ul li{
+	padding: 2px 5px 2px 0px;
+	border-bottom: 1px dotted #CDCDCD;
+}
+
+#sidebar ul li ul li ul li{
+	padding: 1px 0px 1px 10px;
+	border: none;
+}
+
+#sidebar .rec-post a, #sidebar .rec-post a:visited{
+	font: lighter 17px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Arial, Tahoma;
+}
+
+ul.linkcat li, li.linkcat li{
+	background: url(images/bullet-black.gif) no-repeat right !important;
+	padding-right: 20px !important;
+}
+
+ul.list-cat li, li.widget_categories li{
+	background: url(images/bullet-black.gif) no-repeat right !important;
+	padding-right: 20px !important;
+}
+
+ul.list-archives li, li.widget_archives li{
+	background: url(images/bullet-black.gif) no-repeat right !important;
+	padding-right: 20px !important;
+}
+
+ul.list-page li, li.widget_pages ul li, li.widget_recent_entries li{
+	background: url(images/bullet-black.gif) no-repeat right !important;
+	padding-right: 15px !important;
+}
+
+ul.list-page li ul div, li.widget_pages ul li ul li{
+	background: url(images/bullet-black.gif) no-repeat right !important;
+	padding-right: 20px !important;
+}
+
+ul.recent-comments li, li.widget_recent_comments li{
+	background: url(images/bullet-black.gif) no-repeat right !important;
+	padding-right: 15px !important;
+}
+
+li.widget_calendar td {
+	padding: 1px 5px;
+}
+
+.textwidget {
+	padding-top: 7px;
+}
+
+#sidebar-left {
+	float: left;
+	padding: 0px 0px 20px 0px;
+	border-top: 0px solid #F6F7F8;
+	border-left: 7px solid #F6F7F8;
+	width: 180px;
+	color: #333333;
+	font: 11px "Arial", Tahoma;
+	overflow: hidden;
+	background: #E7E6E8;
+}
+
+#sidebar-left h2, #sidebar-left .sidebartitle{
+	font: 19px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Arial, Tahoma;
+	color: #000000;
+	line-height: 25px;
+	text-align: center;
+	margin-bottom: 5px;
+	background: #83829D url(images/topbar.gif) repeat-x top left;
+	border-bottom: 2px solid #83829D;
+	border-top: 1px solid #83829D;
+}
+
+#sidebar-left a:hover{
+	border: none;
+}
+
+#sidebar-left a, #sidebar-left a:visited{
+	font: lighter 19px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Arial, Tahoma;
+	color: #4D4D4D;
+	text-decoration: none;
+	line-height: 30px;
+}
+
+#sidebar-left li a:hover{
+	color: #000000;
+	text-decoration: none;
+}
+
+#sidebar-left ul {
+	margin: 0;
+	padding: 0;
+}
+#sidebar-left ul li {
+	list-style: none;
+	font: 20px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Arial, Tahoma;
+	margin: 0;
+	padding: 0px 0px 4px 0px;
+	border: none;
+}
+
+#sidebar-left ul li ul {
+	padding: 0px 5px 0px 5px;
+	margin: 0;
+}
+#sidebar-left ul li ul li{
+	padding: 0px 0px 0px 0px;
+	border-bottom: 1px dotted #CDCDCD;
+}
+
+#sidebar-left ul li ul li ul li{
+	padding: 1px 0px 1px 10px;
+	border: none;
+}
+
+#sidebar-left-img {
+	width: 170px;
+	padding: 0px;
+	margin: 10px 0px 15px 0px;
+	border: 1px solid #3653D3;
+}
+
+#sidebar-left-oth {
+	padding: 0px 5px 0px 5px;
+}
+
+#sidebar-left .rec-com a, #sidebar-left.rec-com a:visited{
+	font: lighter 16px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Arial, Tahoma;
+}
+
+.post-content {
+	clear: both;
+	padding: 0px 10px 0px 10px;
+	overflow: hidden;
+}
+
+.post-content a {
+	font-weight: bold;
+	border-bottom: 0px dotted #CDCDCD;
+}
+
+#content img {
+	border: none;
+	padding: 0px;
+}
+
+.post {
+	clear: both;
+	padding-top: 0px;
+	margin-bottom: 30px;
+}
+
+.post-cat {
+	background: url(images/tags.gif) no-repeat right center;
+	padding-right: 20px;
+	float: left;
+}
+.post-comments {
+	background: url(images/mini-comments.gif) no-repeat right center;
+	padding-right: 20px;
+	float: right;
+}
+
+.post-rss {
+	background: url(images/icon_feed.gif) no-repeat right center;
+	padding-right: 20px;
+	float: right;
+}
+
+.post-calendar {
+	font: 11px "Tahoma";
+	text-align: center;
+	padding: 4px 0px 6px 0px;
+	color: #8e8e8e;
+	background: #E7E6E8;
+
+}
+
+.post-info {	
+	color: #7E7CBA;
+	font: 20px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Arial, Tahoma;
+}
+
+.post-info a, .post-info a:visited {
+	font-weight: lighter;
+}
+
+.navigation {
+	clear: both;
+	padding: 10px 0px;
+}
+.navigation a, .navigation a:visited {
+	color: #000000;
+}
+
+.navigation a:hover{
+	color: #83829D;
+}
+
+.previous-entries a {
+	font: 20px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Arial, Tahoma;
+	float: left;
+	padding-left: 18px;
+	background: url(images/mini-nav-left.gif) no-repeat left center;
+}
+
+.next-entries a {
+	font: 20px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Arial, Tahoma;
+	float: right;
+	padding-right: 18px;
+	background: url(images/mini-nav-right.gif) no-repeat right center;
+}
+
+#social-all .navbar {
+	text-align: center;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	height: 30px;
+	font: 15px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Arial, Tahoma;
+}
+	
+#social{
+	margin: 0px;
+}
+	
+#social ul{
+	border-top: 2px solid #E7E6E8;
+	text-align: center;
+	list-style: none;
+	line-height: 27px;
+	margin: 0px;
+}
+
+#social li{
+	display: inline;
+	padding-right: 0px;
+	padding-left: 15px;
+}
+	
+#social a, #social a:visited{
+	color: #000000;
+	text-decoration: none;
+	font-weight: normal;
+}
+	
+#social a:hover{
+	color: #7E7CBA;
+	text-decoration: none;
+}
+
+#social li.facebook { 
+	background: url(images/facebook.png) no-repeat right !important;
+	padding-right: 20px !important;
+}
+
+#social li.twitter { 
+	background: url(images/twitter.png) no-repeat right !important;
+	padding-right: 20px !important;
+}
+
+#social li.gbuzz { 
+	background: url(images/gbuzz.png) no-repeat right !important;
+	padding-right: 20px !important;
+}
+
+#social li.technorati { 
+	background: url(images/technorati.png) no-repeat right !important;
+	padding-right: 20px !important;
+}
+
+#social li.digg { 
+	background: url(images/digg.png) no-repeat right !important;
+	padding-right: 20px !important;
+}
+
+#social li.delicious { 
+	background: url(images/delicious.png) no-repeat right !important;
+	padding-right: 20px !important;
+}
+
+#tag {
+	color: black;
+	width: 580px;
+	font: lighter 11px Tahoma, Arial;
+	padding: 4px 7px 5px 7px;
+	background: #E7E6E8;
+}
+
+#tag a, #tag a:visited {
+	color: #797979;
+	text-decoration: none;
+}
+
+#tag a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+#comments, #respond {
+	border-bottom: 1px solid #CDCDCD;
+	padding: 10px 0 5px 0;
+	clear: both;
+}
+
+.commentlist {
+	margin: 0px 0px;
+	padding-left: 20px;
+}
+	
+.commentlist li{
+	margin: 20px 0px 20px 0px;
+	padding-top: 2px;
+	padding-right: 7px;	
+	padding-left: 7px;
+	background: #F1F0F2;
+	border: 2px solid #E7E6E8;
+}
+
+.commentlist .alt {
+	background: #F1F0F2;
+	border: 2px solid #E7E6E8; 
+}
+
+.commentlist cite, .commentlist cite a, .commentlist cite a:visited {
+	font-style: normal;
+	font-size: 21px;
+}
+
+.commentlist small {
+	margin-bottom: 5px;
+	display: block;
+	font: 12px "Tahoma", Arial;
+}
+
+#commentform {
+	margin-top: 10px;
+	font: 17px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Tahoma, Arial;
+}
+
+#commentform p {
+	padding: 6px 0px;
+	margin: 0px;
+}
+
+#commentform label{
+	color: #333333;
+}
+
+#commentform input{	
+	border: 1px dotted #83829D;
+	background: #F3F2F3;
+	padding: 2px;
+	margin-top: 3px;
+}
+
+#commentform input[type="text"]:focus {
+	background: #EAE9EB;
+	border: 1px solid #83829D;
+}
+
+#commentform textarea{
+	width: 580px;
+	height: 200px;
+	border: 1px dotted #83829D;
+	padding: 2px;
+	margin-top: 3px;
+	background: #EAE9EB;
+}
+
+#commentform textarea:focus {
+	background: #F3F2F3;
+	border: 1px solid #83829D;
+}
+
+#commentform #submit{
+	background: #E7E6E8;
+	font: 19px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Arial, Tahoma;
+	color: #000000;
+	float:left;
+	width: 120px;
+	height: 40px;
+	margin-left: 60px;
+	cursor: pointer;
+	border: 1px solid #000000;
+}
+
+#commentform #submit:hover {
+	background: #83829D;
+	color: #FFF;
+	border-left: 0px dotted #000000;
+	border-top: 0px dotted #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+
+.comment-main{
+	width: 100%;
+}
+
+.avatar{
+	float: left;
+	width: 45px;  
+	height: 45px;
+}
+
+.name-and-date{
+	
+}
+
+blockquote {
+	background: white;
+	border: 1px solid #E7E6E8; 
+	padding: 8px;
+	font: 17px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Arial, Tahoma;
+	line-height: 25px;
+}
+
+#footer {
+	width: 983px;
+	clear: both;
+	background: #E7E6E8;
+	padding-bottom: 20px;
+	border-bottom: 7px solid #F6F7F8;
+}
+
+#bbar {
+	background: #83829D url(images/topbar.gif) repeat-x top left;
+	width: 983px;
+	height: 35px;
+	border-top: 10px solid #F6F7F8;
+	border-right: 0px solid #F6F7F8;
+	border-left: 0px solid #F6F7F8;
+	border-bottom: 7px solid #F6F7F8;
+}
+
+#bnavi {
+	width: 906px;
+	margin: 0px;
+	text-align: center;
+}
+
+#bnav {
+	list-style: none;
+	color:white;
+	padding: 0px 0px 0px 0px;
+	font: 19px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Arial, Tahoma;
+	height: 30px;
+}
+
+#bnav a{
+	color: #000000;
+}
+
+#bnav a:hover{
+	color: #4D4D4D;
+}
+
+#creditsh {
+	font: 19px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Arial, Tahoma;
+	color: #83829D;
+	text-decoration: none;
+	padding: 10px;
+}
+
+#creditsh a {
+	color: #4D4D4D;
+}
+
+#creditsh a:hover{
+	color: #000000;
+}
+
+#credits {
+	font: 13px "Tahoma", Jameel Noori Nastaleeq, Alvi Nastaleeq, Urdu Naskh Asiatype, Arial;
+	color: #83829D;
+	text-decoration: none;
+	padding: 0px 0px 0px 0px;
+}
+
+#credits a {
+	color: #4D4D4D;
+}
+
+#credits a:hover{
+	color: #000000;
+}
+
+#wp-calendar {
+	width:100%;
+	border-collapse:collapse;
+	direction: ltr;
+}
+
+#wp-calendar #today {
+	font-weight:bold;
+}
+
+#wp-calendar tbody a {
+	color: #000000;
+	text-decoration:underline;
+	font-family: Arial;
+	font-size:11px;
+	font-weight:bold;
+}
+
+#wp-calendar tbody a:hover {
+	color: #4D4D4D;
+}
+
+#wp-calendar caption {
+	background:#E1E7E9;
+	padding:5px 10px;
+	font-family: Arial;
+	font-size:15px;	
+	margin-bottom:1px;
+	text-decoration:none;
+	text-align:center;
+}
+
+#wp-calendar th, #wp-calendar td {
+	text-align:center;
+	font-size:10px;
+}
+
+#wp-calendar th {
+	background:#E9EEF1;
+	padding:4px 0;
+	border:1px solid #FFF;
+	font-family: Arial;
+	font-size:11px;
+}
+
+#wp-calendar td {
+	border:1px solid #FFF;
+	font-family: Arial;
+	font-size:11px;
+	padding: 5px 0px 5px 0px;
+}
+
+#wp-calendar td#prev a{
+	text-align:left;
+	padding:0px 0px 0px 0px;
+	font-family: Arial;
+	font-size:13px;
+	color:#000000;
+	font-weight:bold;
+}
+
+#wp-calendar td#prev a:hover{
+	color: #4D4D4D;
+}
+
+#wp-calendar td#next a{
+	text-align:right;
+	padding:0px 0px 0px 0px;
+	font-family: Arial;
+	font-size:13px;
+	color: #000000;
+	font-weight:bold;
+}
+
+#wp-calendar td#next a:hover{
+	color: #4D4D4D;
+}
+
+.center {
+	text-align: center;
+}
+
+img.center, img[align="center"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+img.alignleft, img[align="left"] {
+	float:left;
+	margin: 2px 10px 5px 0px;
+}
+
+.alignright {
+	float: right;
+}
+
+img.alignright, img[align="right"] {
+	float:right;
+	margin: 2px 0px 5px 10px;
+}
+
+.clear {
+	clear:both;
+}
+
+hr.clear {
+	clear: both;
+	visibility: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Urdu Open Pad */
+
+.btnHelp 
+{	
+	background: #ECECEC;
+	border: 1px solid #888888;
+	cursor: pointer;
+	cursor: hand;
+	text-align:center;
+	font-family:Urdu Naskh Asiatype, Tahoma,;
+	font-size:14px;
+}
+
+.btnFlat 
+{	
+	background: #F3F2F3;
+	border: 1px solid #888888;
+	cursor: pointer;
+	cursor: hand;
+	text-align:center;
+	font-family: Jameel Noori Nastaleeq, Alvi Nastaleeq, Tahoma, Arial;
+	font-size:17px;
+}
+
+.btnRaised, .btnFlat:hover {
+	background: #EAE9EB;
+	border: 1px outset;
+	cursor: pointer;
+	cursor: hand;
+	text-align:center;
+	font-family: Jameel Noori Nastaleeq, Alvi Nastaleeq, Tahoma, Arial;
+	font-size:17px;
+	font-weight:bold;
+}
+.btnLowered, .btnFlat:active {
+	background: #D3D3D3;
+	border: 1px inset;
+	cursor: pointer;
+	cursor: hand;
+	text-align:center;
+	font-family: Urdu Naskh Asiatype, Tahoma,;
+	font-size:14px;
+}
+
+.btnSysFlat 
+{	
+	background: #808080;
+	border: 1px solid #888888;
+	cursor: pointer;
+	cursor: hand;
+	text-align:center;
+	font-family:Urdu Naskh Asiatype, Tahoma,;
+	font-size:14px;
+}
+
+.btnSysRaised, .btnSysFlat:hover {
+	background: #333333;
+	border: 1px outset;
+	cursor: pointer;
+	cursor: hand;
+	text-align:center;
+	font-family:Urdu Naskh Asiatype, Tahoma,;
+	font-size:14px;
+	font-weight:bold;
+}
+.btnSysLowered, .btnSysFlat:active {
+	background: #333333;
+	border: 1px inset;
+	cursor: pointer;
+	cursor: hand;
+	text-align:center;	
+	font-family:Urdu Naskh Asiatype, Tahoma,;
+	font-size:14px;
+}
+.hiddentext {display:none}
+.outline {cursor:hand; text-decoration:underline}
+
+/* Comment Quote Pluging CSS */
+
+.comment_quote_link  {	
+	float: left;
+	background: #E7E6E8;
+	margin-right: 10px;
+	font: 16px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Tahoma, Arial;
+}
+
+a.comment_quote_link  , a:visited.comment_quote_link  {
+	background: #E7E6E8;
+	border: 1px solid #A7A9BB;
+	padding: 0px 5px 0px 5px;
+	color: #000000;
+}
+
+a:hover.comment_quote_link  {
+	background: #F1F0F2;
+	padding: 0px 5px 0px 5px;
+	border-top: 1px solid #A7A9BB;
+	border-left: 1px solid #A7A9BB;
+	border-bottom: 1px solid #000000;
+	border-right: 1px solid #000000;
+	color: #000000;
+}
+
+.comment_reply_link {	
+	float: left;
+	background: #E7E6E8;
+	margin-right: 10px;
+	font: 16px "Jameel Noori Nastaleeq", Alvi Lahori Nastaleeq, Alvi Nastaleeq, Nafees Web Naskh, Urdu Naskh Asiatype, Tahoma, Arial;
+}
+
+a.comment_reply_link  , a:visited.comment_reply_link  {
+	background: #E7E6E8;
+	border: 1px solid #A7A9BB;
+	padding: 0px 5px 0px 5px;
+	color: #000000;
+}
+
+a:hover.comment_reply_link  {
+	background: #F1F0F2;
+	padding: 0px 5px 0px 5px;
+	border-top: 1px solid #A7A9BB;
+	border-left: 1px solid #A7A9BB;
+	border-bottom: 1px solid #000000;
+	border-right: 1px solid #000000;
+	color: #000000;
+}
