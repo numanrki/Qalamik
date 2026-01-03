@@ -14,50 +14,30 @@ if ( post_password_required() ) {
 	<h3 id="comments"><?php comments_number( 'کوئی تبصرہ نہیں', '1 تبصرہ', '% تبصرے' ); ?> برائے تحریر &#8221;<?php the_title(); ?>&#8220;</h3> 
 
 	<ol class="commentlist">
-
-	<?php foreach ($comments as $comment) : ?>
-
-		<li class="<?php echo $oddcomment; ?>" id="comment-<?php comment_ID() ?>">
-		
-		<div class="comment-main">
-		
-		<div class="avatar" title="Avatar of Comment's Author">
-			<?php echo get_avatar( $comment, 45 ); ?>
-		</div>
-		
-		<div class="name-and-date">
-			<cite title="Author of this Comment"><?php comment_author_link() ?></cite> نے لکھا:
-			<?php if ($comment->comment_approved == '0') : ?>
-			<em>آپکا تبصرہ نظر ثانی کے مراحل میں ہے.</em>
-			<?php endif; ?>
-			<small class="commentmetadata"><a href="#comment-<?php comment_ID() ?>" title="Date and Time of Comment, Permanent Link of Comment"><?php comment_date('l، d F  Y') ?> بوقت <?php comment_time() ?></a> <?php edit_comment_link('ت','',''); ?></small>
-		</div>	
-			
-		</div>
-					
-			<?php comment_text() ?>
-			
-
-		</li>
-
-	<?php 
-		if ('alt' == $oddcomment) $oddcomment = '';
-		else $oddcomment = 'alt';
-	?>
-
-	<?php endforeach;  ?>
-
+		<?php
+		wp_list_comments( array(
+			'style'       => 'ol',
+			'avatar_size' => 45,
+			'callback'    => 'qalamik_comment',
+		) );
+		?>
 	</ol>
 
- <?php else :  ?>
+	<?php
+	// Pagination for comments if there are more than per page
+	if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
+	?>
+		<div class="navigation">
+			<div class="alignleft"><?php previous_comments_link( 'پچھلے تبصرے' ); ?></div>
+			<div class="alignright"><?php next_comments_link( 'اگلے تبصرے' ); ?></div>
+		</div>
+	<?php endif; ?>
 
-  <?php if ('open' == $post->comment_status) : ?> 
-		
-
-	 <?php else :  ?>
-		
+<?php else : ?>
+	<?php if ( comments_open() ) : ?>
+		<!-- Comments are open, but there are no comments. -->
+	<?php else : ?>
 		<p class="nocomments">اس تحریر پر تبصرے بند ہیں.</p>
-
 	<?php endif; ?>
 <?php endif; ?>
 
