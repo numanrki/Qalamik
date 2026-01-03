@@ -14,7 +14,12 @@
 		<div class="post-content">
 		<?php the_content('<p class="serif">جاری رکھیے۔۔۔ &raquo;</p>'); ?>
 		
-		<?php link_pages('<p><strong>صفحات:</strong> ', '</p>', 'number'); ?>
+		<?php wp_link_pages( array(
+			'before' => '<p><strong>صفحات:</strong> ',
+			'after'  => '</p>',
+			'link_before' => '',
+			'link_after'  => '',
+		) ); ?>
 		
 		<?php edit_post_link('ترمیم<br>', '', ''); ?>
 		
