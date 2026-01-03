@@ -27,26 +27,39 @@ html {
 }
 
 body {
-	font: 20px/1.8 "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", "Alvi Nastaleeq", Arial, sans-serif;
+	font: 20px/1.9 "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", "Alvi Nastaleeq", Arial, sans-serif;
 	color: #000000;
 	background: #F3F7FA;
 	margin: 0;
 	padding: 0;
 	direction: rtl;
+	overflow-x: hidden;
 }
 
 center {
 	display: block;
 	text-align: center;
+	max-width: 100%;
+}
+
+/* Central Container System */
+.site-container,
+.container {
+	max-width: 1140px;
+	width: 100%;
+	margin-inline: auto;
+	padding-inline: 15px;
 }
 
 /* ============================================
-   DESKTOP LAYOUT (Original 983px width)
+   DESKTOP LAYOUT (Centered Container System)
    ============================================ */
 #main-container {
-	width: 983px;
+	max-width: 1140px;
+	width: 100%;
 	margin: 0 auto;
 	background: #ffffff;
+	box-shadow: 0 0 20px rgba(0,0,0,0.08);
 }
 
 #wrapper,
@@ -60,15 +73,20 @@ center {
    HEADER
    ============================================ */
 #header {
-	background: #83829D url(images/headerbg.jpg) repeat-x bottom center;
+	background: linear-gradient(135deg, #83829D 0%, #6A6985 100%);
 	width: 100%;
-	height: 221px;
-	margin: 20px 0 0;
+	height: auto;
+	min-height: 200px;
+	margin: 0;
+	padding: 40px 20px;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 #headerimg {
 	text-align: center;
-	padding: 60px 0 0 0;
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 20px;
 }
 
 #headerimg h1,
@@ -95,19 +113,24 @@ center {
    NAVIGATION
    ============================================ */
 #topbar-all {
-	background: #83829D url(images/topbar.gif) repeat-x top left;
-	border-bottom: 4px solid #F6F7F8;
+	background: #83829D;
+	border-bottom: 3px solid #F6F7F8;
 	width: 100%;
 	margin: 0;
-	height: 35px;
+	min-height: 45px;
 }
 
 #topbar {
-	margin: 0;
+	max-width: 1140px;
+	margin: 0 auto;
 	padding: 0;
 	list-style: none;
 	text-align: center;
-	line-height: 35px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	min-height: 45px;
 }
 
 #topbar li {
@@ -140,13 +163,13 @@ center {
    SEARCH
    ============================================ */
 #search {
-	float: left;
 	width: 100%;
-	max-width: 600px;
-	margin: 8px auto;
-	padding: 0 10px;
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 20px 15px;
 	text-align: center;
-	clear: both;
+	background: #F9F9F9;
+	border-bottom: 2px solid #E7E6E8;
 }
 
 #searchform {
@@ -232,54 +255,48 @@ center {
    MAIN CONTENT LAYOUT
    ============================================ */
 #main-content {
+	max-width: 1140px;
 	width: 100%;
+	margin: 0 auto;
 	display: flex;
-	flex-direction: row;
-	gap: 0;
-	background: #F6F7F8;
+	flex-direction: row-reverse;
+	gap: 20px;
+	background: #FFFFFF;
 	min-height: 400px;
-	margin: 0;
-	padding: 0;
+	padding: 30px 15px;
 }
 
 #content {
-	flex: 1;
+	flex: 1 1 70%;
 	min-width: 0;
-	max-width: 575px;
-	text-align: justify;
-	padding: 20px 15px;
-	border-top: 0;
-	border-left: 0;
-	border-right: 6px solid #F6F7F8;
+	text-align: right;
+	padding: 0 20px;
+	border-right: 1px solid #E7E6E8;
 	background: #FFFFFF;
-	order: 2;
+	direction: rtl;
 }
 
 /* ============================================
    SIDEBARS
    ============================================ */
 #sidebar {
-	width: 200px;
-	flex-shrink: 0;
-	padding: 15px 10px 20px;
-	border-top: 0;
-	border-right: 7px solid #F6F7F8;
+	flex: 0 0 280px;
+	width: 280px;
+	padding: 20px 15px;
 	color: #333333;
 	overflow: hidden;
-	background: #E7E6E8;
-	order: 3;
+	background: #F9F9F9;
+	border-radius: 8px;
 }
 
 #sidebar-left {
-	width: 200px;
-	flex-shrink: 0;
-	padding: 15px 10px 20px;
-	border-top: 0;
-	border-left: 7px solid #F6F7F8;
+	flex: 0 0 280px;
+	width: 280px;
+	padding: 20px 15px;
 	color: #333333;
 	overflow: hidden;
-	background: #E7E6E8;
-	order: 1;
+	background: #F9F9F9;
+	border-radius: 8px;
 }
 
 /* Sidebar Titles */
@@ -357,16 +374,19 @@ center {
    POSTS
    ============================================ */
 .post {
-	margin: 0 0 20px 0;
+	margin: 0 0 30px 0;
 	padding: 0;
-	border: 1px solid #C0C0C0;
+	border: 1px solid #E0E0E0;
 	background: #FFFFFF;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .post:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+	transform: translateY(-3px);
+	box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
 /* Post Titles */
@@ -427,16 +447,18 @@ h6 {
 .storycontent,
 .entry-content {
 	clear: both;
-	padding: 20px 15px;
+	padding: 25px 20px;
 	overflow: hidden;
-	line-height: 2;
+	line-height: 2.2;
 	text-align: right;
 	direction: rtl;
+	max-width: 800px;
 }
 
 .post-content p {
 	margin-bottom: 20px;
 	text-align: right;
+	max-width: 75ch;
 }
 
 .post-content a {
@@ -618,26 +640,25 @@ h2 {
 #footer {
 	width: 100%;
 	clear: both;
-	background: #E7E6E8;
-	padding-bottom: 20px;
-	border-bottom: 7px solid #F6F7F8;
+	background: #F9F9F9;
+	padding: 30px 15px;
+	border-top: 3px solid #E7E6E8;
 	margin: 0;
 }
 
 #bbar {
-	background: #83829D url(images/topbar.gif) repeat-x top left;
+	background: #83829D;
 	width: 100%;
-	height: 35px;
-	border-top: 10px solid #F6F7F8;
-	border-bottom: 7px solid #F6F7F8;
+	min-height: 50px;
+	padding: 10px 0;
 	margin: 0;
 }
 
 #bnavi {
+	max-width: 1140px;
 	margin: 0 auto;
 	text-align: center;
-	padding: 0;
-	max-width: 960px;
+	padding: 0 15px;
 }
 
 #bnav {
@@ -647,13 +668,12 @@ h2 {
 	margin: 0;
 	font-size: 1rem;
 	height: auto;
-	min-height: 30px;
-	line-height: 30px;
+	min-height: 40px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	gap: 5px;
+	gap: 10px;
 }
 
 #bnav li {
@@ -684,12 +704,15 @@ h2 {
 	font-size: 1.2rem;
 	color: #83829D;
 	text-decoration: none;
-	padding: 10px;
+	padding: 20px;
 	text-align: center;
+	max-width: 1140px;
+	margin: 0 auto;
 }
 
 #creditsh a {
 	color: #4D4D4D;
+	transition: color 0.3s ease;
 }
 
 #creditsh a:hover {
@@ -697,15 +720,18 @@ h2 {
 }
 
 #credits {
-	font-size: 0.85rem;
+	font-size: 0.95rem;
 	color: #83829D;
 	text-decoration: none;
-	padding: 0;
+	padding: 15px;
 	text-align: center;
+	max-width: 1140px;
+	margin: 0 auto;
 }
 
 #credits a {
 	color: #4D4D4D;
+	transition: color 0.3s ease;
 }
 
 #credits a:hover {
@@ -801,58 +827,55 @@ hr.clear {
 
 /* Tablets and Small Laptops - 1024px and below */
 @media screen and (max-width: 1024px) {
-	#main-container,
-	#wrapper,
-	#page,
-	#header,
-	#topbar-all,
-	#footer,
-	#bbar {
-		width: 100%;
+	#main-container {
 		max-width: 100%;
-		margin-left: 0;
-		margin-right: 0;
+		margin: 0;
 	}
 	
 	#header {
 		height: auto;
-		min-height: 180px;
-		margin-top: 0;
+		min-height: 160px;
+		padding: 30px 15px;
 	}
 	
 	#headerimg {
-		padding: 40px 20px;
+		padding: 20px 15px;
 	}
 	
 	#main-content {
-		width: 100%;
 		flex-direction: column;
+		padding: 20px 15px;
+		gap: 20px;
 	}
 	
 	#content {
+		flex: 1 1 100%;
 		width: 100%;
-		max-width: 100%;
-		order: 1;
 		border-right: 0;
-		padding: 20px 15px;
+		padding: 0 10px;
 	}
 	
 	#sidebar,
 	#sidebar-left {
+		flex: 1 1 100%;
 		width: 100%;
-		order: 2;
-		border-left: 0;
-		border-right: 0;
 		margin-bottom: 20px;
-		padding: 15px;
+		padding: 20px 15px;
 	}
 	
 	#search {
-		float: none;
+		padding: 15px;
+	}
+	
+	#searchform {
+		flex-direction: column;
+		align-items: stretch;
+	}
+	
+	#searchform #s {
 		width: 100%;
-		max-width: 600px;
-		margin: 10px auto;
-		text-align: center;
+		max-width: 400px;
+		margin: 0 auto 10px;
 	}
 }
 
