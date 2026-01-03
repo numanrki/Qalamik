@@ -66,15 +66,16 @@ if ( post_password_required() ) {
 
 <h3 id="respond">اپنا تبصرہ یہاں تحریر کریں</h3>
 
-<?php if ( get_option('comment_registration') && !$user_ID ) : ?>
-<p>تبصرہ کرنے کیلیے آپکا  <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php the_permalink(); ?>">داخل </a>ہونا ضروری ہے.</p>
+<?php if ( get_option('comment_registration') && ! is_user_logged_in() ) : ?>
+<p>تبصرہ کرنے کیلیے آپکا  <a href="<?php echo esc_url( wp_login_url( get_permalink() ) ); ?>">داخل </a>ہونا ضروری ہے.</p>
 <?php else : ?>
 
-<form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
+<form action="<?php echo esc_url( site_url( '/wp-comments-post.php' ) ); ?>" method="post" id="commentform">
 
+<?php $user_ID = get_current_user_id(); ?>
 <?php if ( $user_ID ) : ?>
 
-<p>آپ موجود ہیں بحیثیت <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Log out of this account">خروج &raquo;</a></p>
+<p>آپ موجود ہیں بحیثیت <a href="<?php echo esc_url( admin_url( 'profile.php' ) ); ?>"><?php echo esc_html( wp_get_current_user()->display_name ); ?></a>. <a href="<?php echo esc_url( wp_logout_url( get_permalink() ) ); ?>" title="Log out of this account">خروج &raquo;</a></p>
 
 <?php else : ?>
 

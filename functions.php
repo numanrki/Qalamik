@@ -169,12 +169,10 @@ function mw_recent_comments(
 	
 	$no_comments = absint( $no_comments );
 	
-	$request = $wpdb->prepare(
-		"SELECT ID, comment_ID, comment_content, comment_author, comment_author_url, comment_date, post_title, comment_type
+	$request = "SELECT ID, comment_ID, comment_content, comment_author, comment_author_url, comment_date, post_title, comment_type
 		FROM $wpdb->comments 
 		LEFT JOIN $wpdb->posts ON $wpdb->posts.ID = $wpdb->comments.comment_post_ID
-		WHERE post_status IN ('publish','static') "
-	);	
+		WHERE post_status IN ('publish','static') ";	
 	switch( $type ) {
 		case 'all':
 			// add nothing
