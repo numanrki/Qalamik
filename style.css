@@ -35,13 +35,24 @@ body {
 	direction: rtl;
 }
 
+center {
+	display: block;
+	text-align: center;
+}
+
 /* ============================================
    DESKTOP LAYOUT (Original 983px width)
    ============================================ */
-#wrapper,
-#page {
+#main-container {
 	width: 983px;
 	margin: 0 auto;
+	background: #ffffff;
+}
+
+#wrapper,
+#page {
+	width: 100%;
+	margin: 0;
 	background: #ffffff;
 }
 
@@ -50,9 +61,9 @@ body {
    ============================================ */
 #header {
 	background: #83829D url(images/headerbg.jpg) repeat-x bottom center;
-	width: 983px;
+	width: 100%;
 	height: 221px;
-	margin: 20px auto 0;
+	margin: 20px 0 0;
 }
 
 #headerimg {
@@ -86,8 +97,8 @@ body {
 #topbar-all {
 	background: #83829D url(images/topbar.gif) repeat-x top left;
 	border-bottom: 4px solid #F6F7F8;
-	width: 983px;
-	margin: 0 auto;
+	width: 100%;
+	margin: 0;
 	height: 35px;
 }
 
@@ -483,21 +494,21 @@ h2 {
    FOOTER
    ============================================ */
 #footer {
-	width: 983px;
+	width: 100%;
 	clear: both;
 	background: #E7E6E8;
 	padding-bottom: 20px;
 	border-bottom: 7px solid #F6F7F8;
-	margin: 0 auto;
+	margin: 0;
 }
 
 #bbar {
 	background: #83829D url(images/topbar.gif) repeat-x top left;
-	width: 983px;
+	width: 100%;
 	height: 35px;
 	border-top: 10px solid #F6F7F8;
 	border-bottom: 7px solid #F6F7F8;
-	margin: 0 auto;
+	margin: 0;
 }
 
 #bnavi {
@@ -622,6 +633,7 @@ h2 {
 
 /* Tablets and Small Laptops - 1024px and below */
 @media screen and (max-width: 1024px) {
+	#main-container,
 	#wrapper,
 	#page,
 	#header,
