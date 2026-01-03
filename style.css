@@ -76,17 +76,17 @@ center {
 	background: linear-gradient(135deg, #83829D 0%, #6A6985 100%);
 	width: 100%;
 	height: auto;
-	min-height: 200px;
+	min-height: 140px;
 	margin: 0;
-	padding: 40px 20px;
-	box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+	padding: 25px 20px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 #headerimg {
 	text-align: center;
 	max-width: 1140px;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 10px;
 }
 
 #headerimg h1,
@@ -166,7 +166,7 @@ center {
 	width: 100%;
 	max-width: 1140px;
 	margin: 0 auto;
-	padding: 20px 15px;
+	padding: 12px 15px;
 	text-align: center;
 	background: #F9F9F9;
 	border-bottom: 2px solid #E7E6E8;
@@ -260,17 +260,17 @@ center {
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row-reverse;
-	gap: 20px;
+	gap: 25px;
 	background: #FFFFFF;
 	min-height: 400px;
-	padding: 30px 15px;
+	padding: 20px 15px;
 }
 
 #content {
-	flex: 1 1 70%;
+	flex: 1 1 65%;
 	min-width: 0;
 	text-align: right;
-	padding: 0 20px;
+	padding: 0 15px;
 	border-right: 1px solid #E7E6E8;
 	background: #FFFFFF;
 	direction: rtl;
@@ -280,23 +280,25 @@ center {
    SIDEBARS
    ============================================ */
 #sidebar {
-	flex: 0 0 280px;
-	width: 280px;
+	flex: 0 0 320px;
+	width: 320px;
 	padding: 20px 15px;
 	color: #333333;
 	overflow: hidden;
-	background: #F9F9F9;
-	border-radius: 8px;
+	background: #FAFAFA;
+	border-radius: 6px;
+	border: 1px solid #E7E6E8;
 }
 
 #sidebar-left {
-	flex: 0 0 280px;
-	width: 280px;
+	flex: 0 0 320px;
+	width: 320px;
 	padding: 20px 15px;
 	color: #333333;
 	overflow: hidden;
-	background: #F9F9F9;
-	border-radius: 8px;
+	background: #FAFAFA;
+	border-radius: 6px;
+	border: 1px solid #E7E6E8;
 }
 
 /* Sidebar Titles */
@@ -317,8 +319,69 @@ center {
 
 /* Widget Styling */
 .widget {
-	padding: 10px;
-	margin-bottom: 15px;
+	padding: 15px 12px;
+	margin-bottom: 20px;
+	background: #FFFFFF;
+	border-radius: 6px;
+	border: 1px solid #E7E6E8;
+}
+
+.widget:last-child {
+	margin-bottom: 0;
+}
+
+/* Widget Search Form */
+.widget #searchform {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.widget #searchform #s {
+	width: 100%;
+	height: 38px;
+	padding: 8px 12px;
+	border: 2px solid #E7E6E8;
+	background: #FFFFFF;
+	color: #000000;
+	font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", Arial, sans-serif;
+	font-size: 1rem;
+	border-radius: 4px;
+	text-align: right;
+	transition: border-color 0.3s ease;
+}
+
+.widget #searchform #s:focus {
+	border-color: #83829D;
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(131, 130, 157, 0.1);
+}
+
+.widget #searchform input[type="submit"],
+.widget #searchform #searchsubmit {
+	width: 100%;
+	height: 38px;
+	background: #83829D;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 4px;
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 8px 15px;
+	cursor: pointer;
+	font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", Arial, sans-serif;
+	transition: all 0.3s ease;
+}
+
+.widget #searchform input[type="submit"]:hover,
+.widget #searchform #searchsubmit:hover {
+	background: #6A6985;
+	transform: translateY(-1px);
+	box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.widget #searchform input[type="radio"] {
+	margin: 0 5px;
 }
 
 /* Sidebar Links */
@@ -374,32 +437,32 @@ center {
    POSTS
    ============================================ */
 .post {
-	margin: 0 0 30px 0;
+	margin: 0 0 25px 0;
 	padding: 0;
 	border: 1px solid #E0E0E0;
 	background: #FFFFFF;
-	border-radius: 8px;
+	border-radius: 6px;
 	overflow: hidden;
-	box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .post:hover {
-	transform: translateY(-3px);
-	box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* Post Titles */
 .post h5,
 .post .post-title,
 h5 {
-	color: #000000;
+	color: #FFFFFF;
 	margin: 0;
 	width: 100%;
-	font-size: 1.25rem;
-	padding: 10px;
-	border: 1px solid #83829D;
-	background: #83829D url(images/topbar.gif) repeat-x top left;
+	font-size: 1.4rem;
+	padding: 15px 20px;
+	border: none;
+	background: linear-gradient(135deg, #83829D 0%, #6A6985 100%);
 	transition: background 0.3s ease;
 }
 
@@ -408,38 +471,39 @@ h5 {
 h5 a,
 h5 a:visited {
 	display: block;
-	color: #000000;
+	color: #FFFFFF;
 	text-decoration: none;
 }
 
-.post h5 a:hover,
-h5 a:hover {
-	color: #000000;
-	background: #83829D url(images/title-hover.gif) repeat-x bottom left;
+.post h5:hover,
+h5:hover {
+	background: linear-gradient(135deg, #6A6985 0%, #5A5775 100%);
 }
 
 /* Section Headings */
 h3 {
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	text-align: center;
-	color: #000000;
-	margin: 20px 0 15px;
-	padding: 15px 10px;
-	background: linear-gradient(135deg, #F1F0F2 0%, #E7E6E8 100%);
+	color: #2D2D2D;
+	margin: 25px 0 15px;
+	padding: 15px 20px;
+	background: #F9F9F9;
 	border-radius: 6px;
-	border-right: 4px solid #83829D;
+	border-right: 3px solid #83829D;
 	direction: rtl;
+	font-weight: 600;
 }
 
 h6 {
-	color: #000000;
+	color: #FFFFFF;
 	margin: 0 0 15px;
 	width: 100%;
 	text-align: center;
 	font-size: 1.5rem;
-	background: #83829D url(images/topbar.gif) repeat-x top left;
-	padding: 12px 10px;
+	background: linear-gradient(135deg, #83829D 0%, #6A6985 100%);
+	padding: 15px 20px;
 	direction: rtl;
+	border-radius: 6px 6px 0 0;
 }
 
 /* Post Content */
@@ -485,18 +549,19 @@ h6 {
 .postmetadata,
 .post-info {
 	clear: both;
-	padding: 12px 15px;
-	margin: 15px 0 0;
+	padding: 15px 20px;
+	margin: 20px 0 0;
 	text-align: center;
-	border-top: 1px solid #C0C0C0;
-	background: #F9F9F9;
+	border-top: 1px solid #E7E6E8;
+	background: #FAFAFA;
 	font-size: 0.95rem;
-	color: #000000;
+	color: #666;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	gap: 15px;
+	gap: 12px;
+	min-height: 50px;
 }
 
 .post-cat,
@@ -505,10 +570,12 @@ h6 {
 .post-info span {
 	display: inline-block;
 	padding: 6px 12px;
-	background: #E7E6E8;
+	background: #FFFFFF;
+	border: 1px solid #E7E6E8;
 	border-radius: 4px;
 	margin: 0;
 	transition: all 0.3s ease;
+	font-size: 0.9rem;
 }
 
 .post-cat:hover,
@@ -517,18 +584,20 @@ h6 {
 .post-info span:hover {
 	background: #83829D;
 	color: white;
-	transform: translateY(-2px);
+	border-color: #83829D;
+	transform: translateY(-1px);
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .postmetadata a,
 .post-info a {
-	color: #000000;
+	color: #666;
 	text-decoration: none;
 	transition: color 0.3s ease;
 }
 
-.postmetadata a:hover,
-.post-info a:hover {
+.postmetadata span:hover a,
+.post-info span:hover a {
 	color: #FFFFFF;
 }
 
@@ -574,8 +643,9 @@ h2 {
    COMMENTS
    ============================================ */
 #comments {
-	padding: 10px;
-	margin: 20px 0;
+	padding: 20px 0;
+	margin: 30px 0 20px;
+	border-top: 2px solid #E7E6E8;
 }
 
 .commentlist {
@@ -586,32 +656,76 @@ h2 {
 
 .comment {
 	margin: 0 0 20px 0;
-	padding: 15px;
-	background: #F9F9F9;
-	border: 1px solid #E0E0E0;
-	border-radius: 4px;
+	padding: 20px;
+	background: #FAFAFA;
+	border: 1px solid #E7E6E8;
+	border-radius: 6px;
+	direction: rtl;
 }
 
 .comment-author {
 	font-weight: bold;
-	margin-bottom: 5px;
+	margin-bottom: 8px;
+	color: #2D2D2D;
 }
 
 .comment-meta {
 	font-size: 0.85rem;
 	color: #666;
-	margin-bottom: 10px;
+	margin-bottom: 12px;
 }
 
-#commentform input,
+/* Comment Form */
+#respond {
+	margin: 30px 0;
+	padding: 25px;
+	background: #FAFAFA;
+	border-radius: 6px;
+	border: 1px solid #E7E6E8;
+}
+
+#respond h3 {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+#commentform {
+	direction: rtl;
+}
+
+#commentform p {
+	margin-bottom: 20px;
+}
+
+#commentform label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 600;
+	color: #2D2D2D;
+}
+
+#commentform input[type="text"],
+#commentform input[type="email"],
+#commentform input[type="url"],
 #commentform textarea {
 	width: 100%;
-	padding: 8px;
-	margin-bottom: 10px;
-	border: 1px solid #CDCDCD;
+	padding: 12px 15px;
+	margin-bottom: 15px;
+	border: 2px solid #E7E6E8;
 	background: #FFFFFF;
-	font-family: inherit;
+	font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", Arial, sans-serif;
 	font-size: 1rem;
+	border-radius: 4px;
+	transition: border-color 0.3s ease;
+	direction: rtl;
+	text-align: right;
+}
+
+#commentform input:focus,
+#commentform textarea:focus {
+	border-color: #83829D;
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(131, 130, 157, 0.1);
 }
 
 #commentform textarea {
@@ -621,17 +735,30 @@ h2 {
 
 #commentform input[type="submit"] {
 	width: auto;
-	padding: 10px 20px;
+	min-width: 150px;
+	padding: 12px 30px;
 	background: #83829D;
 	color: white;
 	border: none;
+	border-radius: 4px;
 	cursor: pointer;
 	font-weight: bold;
-	transition: background 0.3s ease;
+	font-size: 1rem;
+	font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", Arial, sans-serif;
+	transition: all 0.3s ease;
 }
 
 #commentform input[type="submit"]:hover {
 	background: #6A6985;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Urdu Editor Spacing */
+#commentform .urdu-editor-container {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #E7E6E8;
 }
 
 /* ============================================
