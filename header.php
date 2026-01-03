@@ -31,10 +31,13 @@ initUrduEditor();
 <div id="topbar-all">
 
 	<ul id="topbar">
-			<?php $pages = wp_list_pages('title_li=&echo=0');
-			print_r($pages);
+			<?php 
+			wp_list_pages( array(
+				'title_li' => '',
+				'echo'     => 1,
+			) );
 			?>
-		  <li class="page_item"><a href="<?php echo get_settings('home'); ?>/" title="Home">صفحہ اول</a></li>
+		  <li class="page_item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Home">صفحہ اول</a></li>
 	</ul>
 	<div id="search">
 				<?php include (TEMPLATEPATH . '/searchform.php'); ?>
@@ -46,8 +49,8 @@ initUrduEditor();
 
   <div id="header">
     <div id="headerimg">
-	<div class="title"><a href="<?php echo get_settings('home'); ?>/"><?php bloginfo('name'); ?></a></div>
-	  <div class="description"><?php bloginfo('description'); ?></div>
+	<div class="title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></div>
+	  <div class="description"><?php bloginfo( 'description' ); ?></div>
 	</div>
   </div>
 

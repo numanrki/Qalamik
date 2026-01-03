@@ -1,26 +1,17 @@
-<?php 
-	if ('comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
-		die ('Please do not load this page directly. Thanks!');
+<?php
+/**
+ * The template for displaying comments
+ *
+ * @package Qalamik
+ */
 
-        if (!empty($post->post_password)) { 
-            if ($_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) {  
-				?>
-
-				<p class="nocomments">یہ تحریر کلمہ شناخت(پاس ورڈ) کے زریعے محفوظ کی گئی ہے، پڑھنے کیلیے کلمہ شناخت داخل کریں۔<p>
-
-				<?php
-				return;
-            }
-        }
-
-		
-		$oddcomment = 'alt';
+if ( post_password_required() ) {
+	return;
+}
 ?>
 
-
-
-<?php if ($comments) : ?>
-	<h3 id="comments"><?php comments_number('کوئی تبصرہ نہیں', '1 تبصرہ', '% تبصرے' );?> برائے تحریر &#8221;<?php the_title(); ?>&#8220;</h3> 
+<?php if ( have_comments() ) : ?>
+	<h3 id="comments"><?php comments_number( 'کوئی تبصرہ نہیں', '1 تبصرہ', '% تبصرے' ); ?> برائے تحریر &#8221;<?php the_title(); ?>&#8220;</h3> 
 
 	<ol class="commentlist">
 

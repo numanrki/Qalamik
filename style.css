@@ -1,10 +1,17 @@
 /*  
-Theme Name: Silver Urdu
-Theme URI: http://www.mbilalm.com/
-Description: "Silver Urdu" is a beautiful Theme for <a href="http://wordpress.org/">Wordpress</a> by <a href="http://www.mbilalm.com">M Bilal M</a>.
-Version: 1.1
-Author: M Bilal M
+Theme Name: Qalamik
+Theme URI: https://github.com/numanrki/Qalamik
+Description: A modern RTL WordPress theme for Urdu and Arabic content. Features beautiful Nastaleeq typography, responsive design, and full WordPress compatibility. Perfect for Urdu blogs, news sites, and content publishers.
+Version: 2.0
+Requires at least: 5.0
+Tested up to: 6.4
+Requires PHP: 7.4
+Author: M Bilal M (Updated by Numan)
 Author URI: http://www.mbilalm.com/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: qalamik
+Tags: rtl-language-support, right-to-left, translation-ready, custom-logo, custom-header, custom-background, custom-menu, featured-images, threaded-comments, two-columns, sidebar-right, sidebar-left, urdu, arabic, blog
 */
 
 body {

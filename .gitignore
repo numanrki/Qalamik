@@ -1,0 +1,49 @@
+# WordPress
+*.log
+.htaccess
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Build and Package Files
+*.zip
+*.tar.gz
+*.rar
+
+# Node modules (if you add any build tools later)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Sass/SCSS (if you add preprocessing later)
+.sass-cache/
+*.css.map
+*.scss.map
+
+# Languages (keep the directory but ignore compiled .mo files if generated)
+languages/*.mo
+
+# Theme specific
+screenshot-source.psd

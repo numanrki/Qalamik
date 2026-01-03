@@ -12,7 +12,7 @@
 				<b> | </b>
 				<a href="<?php bloginfo('comments_rss2_url'); ?>" title="For Comments RSS Click Here" >تبصروں کا آر ایس ایس</a>
 				<b> | </b>
-				<a href="<?php bloginfo('url'); ?>/wp-admin" title="Its only admin's Section, Not for You. Thanks " >ایڈمن</a>
+				<a href="<?php echo esc_url( admin_url() ); ?>" title="Its only admin's Section, Not for You. Thanks " >ایڈمن</a>
 				<b> | </b>
 		</div>
 	</div>
@@ -22,7 +22,7 @@
  <div id="footer">
  
 <div id="creditsh">
-	<div>جملہ حقوق بحق  <a href="<?php echo get_settings('home'); ?>/" title="<?php bloginfo('name'); ?>">&#8221;<?php bloginfo('name'); ?>&#8220;</a>  محفوظ ہیں.</div>
+	<div>جملہ حقوق بحق  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>">&#8221;<?php bloginfo( 'name' ); ?>&#8220;</a>  محفوظ ہیں.</div>
 </div>
   
 <div id="credits">
