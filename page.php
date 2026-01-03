@@ -8,7 +8,7 @@
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<div class="post" id="post-<?php the_ID(); ?>">  
 	<center><h5><?php the_title(); ?></h5></center>
-	<div class="post-calendar"><?php if (get_the_author_url()) { ?><a href="<?php the_author_url(); ?>"><?php the_author(); ?></a><?php } else { the_author(); } ?> نے  <?php the_time('l، j F Y') ?> کو شائع کیا.</div>	
+	<div class="post-calendar"><?php if ( get_the_author_meta( 'url' ) ) { ?><a href="<?php echo esc_url( get_the_author_meta( 'url' ) ); ?>"><?php the_author(); ?></a><?php } else { the_author(); } ?> نے  <?php the_time('l، j F Y') ?> کو شائع کیا.</div>	
 	
 	<div class="post-content">	
 	<?php the_content('جاری رکھیے۔۔۔ &raquo;'); ?>

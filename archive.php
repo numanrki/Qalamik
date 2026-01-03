@@ -40,7 +40,7 @@
 	<div class="post" id="post-<?php the_ID(); ?>">
 				<div class="posttitle">
 					<center><h5><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?> Permanent Link: "><?php the_title(); ?></a></h5></center>
-					<div class="post-calendar"><?php if (get_the_author_url()) { ?><a href="<?php the_author_url(); ?>"><?php the_author(); ?></a><?php } else { the_author(); } ?> نے  <?php the_time('l، j F Y') ?> کو شائع کیا.</div>
+					<div class="post-calendar"><?php if ( get_the_author_meta( 'url' ) ) { ?><a href="<?php echo esc_url( get_the_author_meta( 'url' ) ); ?>"><?php the_author(); ?></a><?php } else { the_author(); } ?> نے  <?php the_time('l، j F Y') ?> کو شائع کیا.</div>
 				</div>
 				
 				<div class="post-content">
